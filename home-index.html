@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Viagem de Manu</title>
+        <link rel="icon" type="image/x-icon" href="midias/Favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+            * {
+                font-family: "Delius", cursive;
+            }
+            .hidden{
+                display: none !important;
+            }
+            .nav-link {
+                color: #989797;
+            }
+            .nav-link:hover {
+                color: #fff;
+                transform:scale(1.03);   
+                transition: 0.3s ease;
+            }
+            #preloader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #005470;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+                transition: opacity 1s ease-out;
+            }
+            .spinner-grow {
+                --bs-spinner-animation-speed: 1.5s; /* Altera a velocidade apenas para esta classe */
+            }
+            .delay-1 {
+                animation-delay: -0.15s;
+            }
+
+            .delay-2 {
+                animation-delay: -0.3s;
+            }
+
+            .delay-3 {
+                animation-delay: -0.45s;
+            }
+            /* Esconde suavemente o preloader */
+            #preloader.fade-out {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .list-group-item{
+                padding: 1rem 2rem;
+            }
+        </style>
+    </head>
+    <body class="d-flex justify-content-center flex-column">
+
+        <div id="preloader" class="d-flex gap-3">
+
+            <div class="spinner-grow text-danger delay-3" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow text-danger delay-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow text-danger delay-1" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+        </div>
+        
+        <main id="mainContent">
+
+            <nav class="navbar navbar-expand-lg py-1 d-flex justify-content-center position-sticky top-0" style="background-color: #005b79bb;">
+                <div class="container-fluid m-auto">
+                    
+                    <a class="navbar-brand fs-3 me-5 pe-5" href="#">A viagem de <strong style="color: #a40000; font-weight: 100;">Manu</strong></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-underline fs-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contador.html">Contador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quiz.html">Quiz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </nav>
+    
+            <section id="declaracao" class="container w-75 mt-5 p-5 text-justify d-flex flex-column justify-content-center align-items-center rounded-3" style="color: #000; background-color: #faebd7e2; letter-spacing: 1px;" >
+    
+                <h1 class="mb-3" style="font-size: 3rem;" >Olá, <strong style="color: #a40000; font-weight: 100;">Querida</strong></h1>
+                <p class="fs-4">Feliz aniversário de namoro, minha nega!! Contra todas as adversidades e limitações possíveis, nosso relacionamento fez dois aninhos, e que esse seja o segundo de muitos ainda!</p>
+                <p class="fs-4">Eu não consigo expressar o quão grato eu sou por te ter como minha mulher, pois tu é uma pessoa que nem nos meus melhores sonhos eu pensei que fosse encontrar. Talentosa, Inteligente, Meiga, MA-RA-VI-LHO-SA, Palhassona KKKKKKK. Faltam adjetivos pra te descrever, mas se eu precisasse resumir em um, seria <strong>Brilhante</strong>.</p>
+                <p class="fs-4">Tu é a razão pela qual eu busco sempre ser uma pessoa melhor, pois ao lado de tanto brilhantismo, como poderia eu não ser a minha melhor versão? Eu posso dizer com propriedade que sou seu maior fã, e acompanhar seu crescimento assim tão de perto é algo que não tem preço. Tu vai voar muito ainda, meu amor!</p>
+                <p class="fs-4">Eu tenho muito orgulhoso pelo que construimos, mesmo com tantas complicações, e anseio pelo dia em que finalmente nos uniremos, sem mais distância ou impecilhos, apenas eu e você no nosso ninho.</p>
+
+                <p class="fs-4 mt-3">Do seu nego, Marcos.</p>
+            </section>
+    
+            <section id="funcionalidades" class="container w-75 my-5 py-5 px-3 text-center d-flex flex-column justify-content-center align-items-center rounded-3" style="color: #000; background-color: #ffffff99;">
+                
+                <h1 class="mb-5" style="font-size: 3rem;" >O que tem nesse Site<strong style="color: #a40000; font-weight: 100;">?</strong></h1>
+                <p class="fs-4">Já que você perguntou, esse belo site conta com:</p>
+                
+                <ul class="list-group text-start fs-4">
+                    <li class="list-group-item" style="background-color: #5ad6ff;">Home: Onde você está</li>
+                    <li class="list-group-item">Contador: Clica lá pra saber o que ele conta</li>
+                    <li class="list-group-item">Quiz: Um minigame pra ver se tu lembra de tudo nesses 2 anos.</li>
+                </ul>
+                
+            </section>
+
+            <div id="bgImg" class="container-fluid position-fixed top-0" style="width: 100vw; height: 100vh; background: url('midias/bg5.gif') no-repeat; background-size: cover; z-index: -99; "></div>
+
+        </main>
+
+    
+        <script src="js/homeScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+    </body>
+</html>

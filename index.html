@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Viagem de Manu</title>
+        <link rel="icon" type="image/x-icon" href="midias/Favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+            * {
+                font-family: "Delius", cursive;
+            }
+            .hidden{
+                display: none !important;
+            }
+            .nav-link {
+                color: #989797;
+            }
+            .nav-link:hover {
+                color: #fff;
+                transform:scale(1.03);   
+                transition: 0.3s ease;
+            }
+            #preloader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #005470;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+                transition: opacity 1s ease-out;
+            }
+            .spinner-grow {
+                --bs-spinner-animation-speed: 1.5s; /* Altera a velocidade apenas para esta classe */
+            }
+            .delay-1 {
+                animation-delay: -0.15s;
+            }
+
+            .delay-2 {
+                animation-delay: -0.3s;
+            }
+
+            .delay-3 {
+                animation-delay: -0.45s;
+            }
+            /* Esconde suavemente o preloader */
+            #preloader.fade-out {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .list-group-item{
+                padding: 1rem 2rem;
+            }
+        </style>
+    </head>
+    <body class="d-flex justify-content-center flex-column">
+
+        <div id="preloader" class="d-flex gap-3">
+
+            <div class="spinner-grow text-danger delay-3" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow text-danger delay-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow text-danger delay-1" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+        </div>
+        
+        <main id="mainContent">
+
+            <nav class="navbar navbar-expand-lg py-1 d-flex justify-content-center align-items-center position-sticky top-0" style="background-color: #005b79bb;">
+                <div class="container-fluid m-auto">
+                    
+                    <a class="navbar-brand fs-3 me-5 pe-5" href="#">A viagem de <strong style="color: #a40000; font-weight: 100;">Manu</strong></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-underline fs-4">
+                            <li class="nav-item">
+                                <!-- href="index.html" -->
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- href="contador.html" -->
+                                <a class="nav-link" href="novidades-em-breve.html">Contador</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- href="quiz.html" -->
+                                <a class="nav-link" href="novidades-em-breve.html">Quiz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </nav>
+    
+            <section class="container-fluid d-flex my-5 flex-column gap-2 text-white justify-content-center align-items-center rounded-5" style="height: 80vh; width: 80vw; background-color: #00475f97;">
+
+                <p class="fs-3 mt-5">Eu te pedi em namoro oficialmente às 21:21 do dia 18 de Outubro de 2023.</p>
+                <p class="fs-3">Tendo como base esse valor, estamos juntos à exatos:</p>
+                <div id="cHrs" class="fs-1 mt-2 rounded-3 w-75 text-center py-2" style="background-color: #ef0000ba;"></div>
+                <div id="cDias" class="fs-1 mt-3 rounded-3 w-75 text-center py-2" style="background-color: #ef0000ba;"></div>
+
+                <p class="fs-3 mt-5">Já faz um tempo considerável que tu alegra meus dias.</p>
+            </section>
+
+            <div id="bgImg" class="container-fluid position-fixed top-0" style="width: 100vw; height: 100vh; background: url('midias/bg4.gif') no-repeat; background-size: cover; z-index: -99; "></div>
+
+        </main>
+
+    
+        <script src="js/homeScript.js"></script>
+        <script src="js/contadorScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+    </body>
+</html>
