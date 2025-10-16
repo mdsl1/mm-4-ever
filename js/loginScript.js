@@ -14,7 +14,7 @@ document.addEventListener("click", () => {
                     
                     <h1 class="mb-3 fw-bolder" style="color: #a40000;>É você mesmo?</h1>
 
-                    <p class="mb-4 fs-5">Vamos ver se você é quem deveria estar aqui</p>
+                    <p class="mb-4 fs-5" style="text-shadow: #000000 0 0 10px;">Vamos ver se você é quem deveria estar aqui</p>
                     
                     <label class="mt-4 fs-3 fw-bolder" for="login">Login:</label>
                     <input class="px-3 py-2 w-100 rounded-3 mt-2 fs-5" type="login" name="login" id="login" placeholder="Dica: Seu primeiro apelido. Começa com 'M'." required autocomplete="off">
