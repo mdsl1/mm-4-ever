@@ -74,7 +74,7 @@ export const perguntas = [
         "alternativas": {
             "A": "Jogar em um mapa de cidade sozinhos no Minecraft",
             "B": "Ter medo de jogar ranqueadas quando começou a jogar",
-            "C": "Juntar dinheiro na infância para ir à um show do BTS",
+            "C": "Juntar dinheiro na infância para ir à um evento",
             "D": "Quase morrer andando de bicicleta",
         },
         "resposta": 0
